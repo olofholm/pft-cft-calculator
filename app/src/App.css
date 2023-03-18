@@ -8,6 +8,13 @@ h1 {
     font-weight: 600;
 }
 
+h2 {
+    color: goldenrod;
+    font-size: medium;
+    font-weight: 600;
+    margin: 0;
+}
+
 .header-container {
     display: flex;
     background-color: darkblue;
@@ -63,4 +70,36 @@ h1 {
     width: 110px;
     font-size: large;
     border: solid 2px goldenrod;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 360px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: darkblue;
+    padding: 5px 5px 20px 5px;
+}
+
+.reps {
+    height: 35px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+select {
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.plank-time {
+    background-color: white;
+    width: 150px;
+    align-self: center;
+    border-radius: 5px;
 }
