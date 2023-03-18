@@ -1,16 +1,66 @@
-.main-container {
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: large;
+    font-weight: 600;
+}
+
+.header-container {
     display: flex;
     background-color: darkblue;
     width: 350px;
-    margin: 25px auto;
+    margin: auto;
+    margin-top: 25px;
     border-radius: 10px;
     padding: 10px;
     justify-content: space-between;
 }
 
-h1 {
-    color: red;
-    font-family:Arial, Helvetica, sans-serif;
+.pft-or-cft-container, .mfage {
+    display: flex;
+    justify-content: space-around;
+    background-color: none;
+    width: 370px;
+    margin: auto;
+    margin-top: 2px;
+}
+
+.pftcft-button {
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    color: goldenrod;
     font-size: large;
     font-weight: 600;
+    background-color: darkred;
+    border: solid 2px goldenrod;
+}
+
+.pftcft-button:hover {
+    background-color: rgb(120, 0, 0);
+}
+
+.male-female-button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    color: goldenrod;
+    font-size: large;
+    font-weight: 600;
+    background-color: darkred;
+    border: solid 2px goldenrod;
+}
+
+.male-female-button:hover {
+    background-color: rgb(120, 0, 0);
+}
+
+.age-input {
+    border-radius: 10px;
+    width: 110px;
+    font-size: large;
+    border: solid 2px goldenrod;
 }
