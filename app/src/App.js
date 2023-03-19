@@ -4,6 +4,7 @@ import TimerPicker from 'react-time-picker';
 import ega from './ega.png';
 
 import PushupsPullups from "./components/pushups-pullups";
+import Plank from "./components/plank";
 
 //Header of app
 const Header = () => {
@@ -75,15 +76,6 @@ const MFAge = ({setIsMale, setAge}) => {
 }
 
 //  *** PFT EVENTS ***
-
-const Plank = () => {
-  return (
-    <div className="event-container">
-      <h2>Plank</h2>
-      <TimerPicker format="mm:ss" disableClock={true} clearIcon={null} className='plank-time'/>
-    </div>
-  );
-}
 
 const RunningRowing = () => {
   return (
