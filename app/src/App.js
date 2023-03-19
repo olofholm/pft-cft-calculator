@@ -3,6 +3,8 @@ import './App.css';
 import TimerPicker from 'react-time-picker';
 import ega from './ega.png';
 
+import PushupsPullups from "./components/pushups-pullups";
+
 //Header of app
 const Header = () => {
   return (
@@ -73,25 +75,6 @@ const MFAge = ({setIsMale, setAge}) => {
 }
 
 //  *** PFT EVENTS ***
-const PushupsPullups = ({ isMale, age, setPpScore }) => {
-
-  const calculateScore = (e) => {
-    
-  }
-
-  return (
-    <div className="event-container">
-      <h2>Pull-Ups/Push-Ups</h2>
-      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}}>
-        <select>
-          <option value='pullups'>Pull-Ups</option>
-          <option value='pushups'>Push-Ups</option>
-        </select>
-        <input type='number' placeholder='Reps' className="reps" onChange={calculateScore}></input>
-      </div>
-    </div>
-  );
-}
 
 const Plank = () => {
   return (
