@@ -73,7 +73,11 @@ const MFAge = ({setIsMale, setAge}) => {
 }
 
 //  *** PFT EVENTS ***
-const PushupsPullups = () => {
+const PushupsPullups = ({ isMale, age, setPpScore }) => {
+
+  const calculateScore = (e) => {
+    
+  }
 
   return (
     <div className="event-container">
@@ -83,7 +87,7 @@ const PushupsPullups = () => {
           <option value='pullups'>Pull-Ups</option>
           <option value='pushups'>Push-Ups</option>
         </select>
-        <input type='number' placeholder='Reps' className="reps"></input>
+        <input type='number' placeholder='Reps' className="reps" onChange={calculateScore}></input>
       </div>
     </div>
   );
@@ -156,10 +160,13 @@ const ManeuverUnderFire = () => {
 }
 
 // *** SCOREBOARD ***
-const Scoreboard = () => {
+const Scoreboard = (props) => {
   return (
     <div className="event-container">
       <h2>Results</h2>
+      <h3>Push-Ups/Pull-Ups: {props.ppScore}</h3>
+      <h3>Plank: {props.plankScore}</h3>
+      <h3>Run/Row: {props.rrScore}</h3>
     </div>
   );
 }
@@ -170,6 +177,10 @@ function App() {
   const [isPFT, setIsPFT] = useState(true);
   const [isMale, setIsMale] = useState(true);
   const [age, setAge] = useState(17);
+
+  const [ppScore, setPpScore] = useState(0);
+  const [plankScore, setPlankScore] = useState(0);
+  const [rrScore, setRrScore] = useState(0);
   
   return (
     <>
@@ -179,7 +190,7 @@ function App() {
 
       {isPFT ? (
           <>
-          <PushupsPullups />
+          <PushupsPullups isMale={isMale} age={age} setPpScore={setPpScore}/>
           <Plank />
           <RunningRowing />
         </>
@@ -191,7 +202,7 @@ function App() {
         </>
       )}
 
-      <Scoreboard />
+      <Scoreboard ppScore={ppScore} plankScore={plankScore} rrScore={rrScore}/>
     </>
   );
 } 
