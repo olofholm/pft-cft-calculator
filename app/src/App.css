@@ -10,9 +10,15 @@ h1 {
 
 h2 {
     color: goldenrod;
-    font-size: medium;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
+}
+
+label {
+    color: white;
+    font-size: 14px;
+    align-self: center;
 }
 
 .header-container {
@@ -46,6 +52,17 @@ h2 {
     border: solid 2px goldenrod;
 }
 
+.pftcft-button-selected {
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    color: goldenrod;
+    font-size: large;
+    font-weight: 600;
+    background-color: rgb(78, 0, 0);
+    border: solid 2px goldenrod;
+}
+
 .pftcft-button:hover {
     background-color: rgb(120, 0, 0);
 }
@@ -58,6 +75,17 @@ h2 {
     font-size: large;
     font-weight: 600;
     background-color: darkred;
+    border: solid 2px goldenrod;
+}
+
+.male-female-button-selected {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    color: goldenrod;
+    font-size: large;
+    font-weight: 600;
+    background-color: rgb(78, 0, 0);
     border: solid 2px goldenrod;
 }
 
@@ -87,8 +115,9 @@ h2 {
 
 .reps {
     height: 35px;
-    width: 50px;
+    width: 60px;
     border-radius: 5px;
+    font-size: medium;
 }
 
 select {
@@ -97,9 +126,10 @@ select {
     border-radius: 5px;
 }
 
-.plank-time {
+.plank-time, .runrow-time {
     background-color: white;
-    width: 150px;
+    width: 80px;
+    height: 40px;
     align-self: center;
     border-radius: 5px;
 }
