@@ -72,7 +72,7 @@ const MalePullups17to20 = [
         reps: 20,
         score: 100
     }
-]
+];
 const MalePullups17to20MAX = 20;
 
 //From 21 to 35
@@ -153,7 +153,7 @@ const MalePullups21to35 = [
     reps: 23,
     score: 100
   }
-]
+];
 const MalePullups21to35MAX = 23;
 
 //From 36 to 40
@@ -226,7 +226,7 @@ const MalePullups36to40 = [
       reps: 21,
       score: 100
   }
-]
+];
 const MalePullups36to40MAX = 21;
 
 //From 41 to 45
@@ -295,7 +295,7 @@ const MalePullups41to45 = [
       reps: 20,
       score: 100
   }
-]
+];
 const MalePullups41to45MAX = 20;
 
 //From 41 to 45
@@ -364,7 +364,7 @@ const MalePullups46to50 = [
       reps: 19,
       score: 100
   }
-]
+];
 const MalePullups46to50MAX = 19;
 
 //From 51 and up
@@ -433,7 +433,7 @@ const MalePullups51 = [
       reps: 18,
       score: 100
   }
-]
+];
 const MalePullups51Max = 18;
 
 //FEMALE PULL UPS SCORING TABLE
@@ -467,7 +467,7 @@ const FemalePullups17to20 = [
       reps: 7,
       score: 100
   }
-]
+];
 const FemalePullups17to20MAX = 7;
 
 //From 21 to 25
@@ -508,7 +508,7 @@ const FemalePullups21to25 = [
     reps: 11,
     score: 100
   }
-]
+];
 const FemalePullups21to25MAX = 11;
 
 //From 26 to 30
@@ -549,7 +549,7 @@ const FemalePullups26to30 = [
     reps: 12,
     score: 100
   }
-]
+];
 const FemalePullups26to30MAX = 12;
 
 //From 31 to 35
@@ -590,7 +590,7 @@ const FemalePullups31to35 = [
     reps: 11,
     score: 100
   }
-]
+];
 const FemalePullups31to35MAX = 11;
 
 //From 36 to 40
@@ -627,7 +627,7 @@ const FemalePullups36to40 = [
     reps: 10,
     score: 100
   }
-]
+];
 const FemalePullups36to40MAX = 10;
 
 //From 41 to 45
@@ -660,7 +660,7 @@ const FemalePullups41to45 = [
       reps: 8,
       score: 100
   }
-]
+];
 const FemalePullups41to45MAX = 8;
 
 //From 46 to 50
@@ -685,7 +685,7 @@ const FemalePullups46to50 = [
       reps: 6,
       score: 100
   }
-]
+];
 const FemalePullups46to50MAX = 6;
 
 //From 51 and Up
@@ -702,7 +702,7 @@ const FemalePullups51 = [
       reps: 4,
       score: 100
   }
-]
+];
 const FemalePullups51MAX = 4;
 
 //MALE PUSH UPS SCORING TABLE
@@ -873,7 +873,7 @@ const MalePushups17to20 = [
     score: 70
   },
 
-]
+];
 const MalePushups17to20MAX = 82;
 
 //From 21 to 25
@@ -1074,7 +1074,7 @@ const MalePushups21to25 = [
     reps: 87,
     score: 70
   }
-]
+];
 const MalePushups21to25MAX = 87;
 
 //From 26 to 30
@@ -1263,7 +1263,7 @@ const MalePushups26to30 = [
     reps: 84,
     score: 70
   }
-]
+];
 const MalePushups26to30MAX = 84;
 
 //From 31 to 35
@@ -1448,7 +1448,7 @@ const MalePushups31to35 = [
     reps: 80,
     score: 70
   }
-]
+];
 const MalePushups31to35MAX = 80;
 
 //From 36 to 40
@@ -1625,7 +1625,7 @@ const MalePushups36to40 = [
     reps: 76,
     score: 70
   }
-]
+];
 const MalePushups36to40MAX = 76;
 
 //From 41 to 45
@@ -1802,7 +1802,7 @@ const MalePushups41to45 = [
     reps: 72,
     score: 70
   }
-]
+];
 const MalePushups41to45MAX = 72;
 
 //From 46 to 50
@@ -1983,7 +1983,7 @@ const MalePushups46to50 = [
     reps: 68,
     score: 70
   }
-]
+];
 const MalePushups46to50MAX = 68;
 
 //From 51 and Up
@@ -2168,10 +2168,178 @@ const MalePushups51 = [
     reps: 64,
     score: 70
   }
-]
+];
 const MalePushups51MAX = 64;
 
+//FEMALE PUSH UPS SCORING TABLE
+//From 17 to 20
+const FemalePushups17to20 = 
+[
+  { reps: 19, score: 40 }, { reps: 20, score: 41 },
+  { reps: 21, score: 43 }, { reps: 22, score: 44 },
+  { reps: 23, score: 45 }, { reps: 24, score: 47 },
+  { reps: 25, score: 48 }, { reps: 26, score: 49 },
+  { reps: 27, score: 50 }, { reps: 28, score: 52 },
+  { reps: 29, score: 53 }, { reps: 30, score: 54 },
+  { reps: 31, score: 56 }, { reps: 32, score: 57 },
+  { reps: 33, score: 58 }, { reps: 34, score: 60 },
+  { reps: 35, score: 61 }, { reps: 36, score: 62 },
+  { reps: 37, score: 63 }, { reps: 38, score: 65 },
+  { reps: 39, score: 66 }, { reps: 40, score: 67 },
+  { reps: 41, score: 69 }, { reps: 41, score: 69 }
+];
+const FemalePushups17to20MAX = 42;
 
+//From 21 to 25
+const FemalePushups21to25 =
+[
+  { reps: 18, score: 40 }, { reps: 19, score: 41 },
+  { reps: 20, score: 42 }, { reps: 21, score: 43 },
+  { reps: 22, score: 44 }, { reps: 23, score: 45 },
+  { reps: 24, score: 46 }, { reps: 25, score: 47 },
+  { reps: 26, score: 48 }, { reps: 27, score: 49 },
+  { reps: 28, score: 50 }, { reps: 29, score: 51 },
+  { reps: 30, score: 52 }, { reps: 31, score: 53 },
+  { reps: 32, score: 54 }, { reps: 33, score: 55 },
+  { reps: 34, score: 56 }, { reps: 35, score: 57 },
+  { reps: 36, score: 58 }, { reps: 37, score: 59 },
+  { reps: 38, score: 60 }, { reps: 39, score: 61 },
+  { reps: 40, score: 62 }, { reps: 41, score: 63 },
+  { reps: 42, score: 64 }, { reps: 43, score: 65 },
+  { reps: 44, score: 66 }, { reps: 45, score: 67 },
+  { reps: 46, score: 68 }, { reps: 47, score: 69 },
+  { reps: 48, score: 70 }
+];
+const FemalePushups21to25MAX = 48;
+
+//From 26 to 30
+const FemalePushups26to30 =
+[
+  { reps: 18, score: 40 }, { reps: 19, score: 41 },
+  { reps: 20, score: 42 }, { reps: 21, score: 43 },
+  { reps: 22, score: 44 }, { reps: 23, score: 45 },
+  { reps: 24, score: 46 }, { reps: 25, score: 47 },
+  { reps: 26, score: 48 }, { reps: 27, score: 48 },
+  { reps: 28, score: 49 }, { reps: 29, score: 50 },
+  { reps: 30, score: 51 }, { reps: 31, score: 52 },
+  { reps: 32, score: 53 }, { reps: 33, score: 54 },
+  { reps: 34, score: 55 }, { reps: 35, score: 56 },
+  { reps: 36, score: 57 }, { reps: 37, score: 58 },
+  { reps: 38, score: 59 }, { reps: 39, score: 60 },
+  { reps: 40, score: 61 }, { reps: 41, score: 62 },
+  { reps: 42, score: 63 }, { reps: 43, score: 63 },
+  { reps: 44, score: 64 }, { reps: 45, score: 65 },
+  { reps: 46, score: 66 }, { reps: 47, score: 67 },
+  { reps: 48, score: 68 }, { reps: 49, score: 69 },
+  { reps: 50, score: 70 }
+];
+const FemalePushups26to30MAX = 50;
+
+//From 31 to 35
+const FemalePushups31to35 = 
+[
+  { reps: 16, score: 40 }, { reps: 17, score: 41 },
+  { reps: 18, score: 42 }, { reps: 19, score: 43 },
+  { reps: 20, score: 44 }, { reps: 21, score: 45 },
+  { reps: 22, score: 46 }, { reps: 23, score: 47 },
+  { reps: 24, score: 48 }, { reps: 25, score: 49 },
+  { reps: 26, score: 50 }, { reps: 27, score: 51 },
+  { reps: 28, score: 52 }, { reps: 29, score: 53 },
+  { reps: 30, score: 54 }, { reps: 31, score: 55 },
+  { reps: 32, score: 56 }, { reps: 33, score: 57 },
+  { reps: 34, score: 58 }, { reps: 35, score: 59 },
+  { reps: 36, score: 60 }, { reps: 37, score: 61 },
+  { reps: 38, score: 62 }, { reps: 39, score: 63 },
+  { reps: 40, score: 64 }, { reps: 41, score: 65 },
+  { reps: 42, score: 66 }, { reps: 43, score: 67 },
+  { reps: 44, score: 68 }, { reps: 45, score: 69 },
+  { reps: 46, score: 70 }
+];
+const FemalePushups31to35MAX = 46;
+
+//From 36 to 40
+const FemalePushups36to40 =
+[
+  { reps: 14, score: 40 }, { reps: 15, score: 41 },
+  { reps: 16, score: 42 }, { reps: 17, score: 43 },
+  { reps: 18, score: 44 }, { reps: 19, score: 45 },
+  { reps: 20, score: 46 }, { reps: 21, score: 47 },
+  { reps: 22, score: 48 }, { reps: 23, score: 49 },
+  { reps: 24, score: 50 }, { reps: 25, score: 51 },
+  { reps: 26, score: 52 }, { reps: 27, score: 53 },
+  { reps: 28, score: 54 }, { reps: 29, score: 56 },
+  { reps: 30, score: 57 }, { reps: 31, score: 58 },
+  { reps: 32, score: 59 }, { reps: 33, score: 60 },
+  { reps: 34, score: 61 }, { reps: 35, score: 62 },
+  { reps: 36, score: 63 }, { reps: 37, score: 64 },
+  { reps: 38, score: 65 }, { reps: 39, score: 66 },
+  { reps: 40, score: 67 }, { reps: 41, score: 68 },
+  { reps: 42, score: 69 }, { reps: 43, score: 70 }
+];
+const FemalePushups36to40MAX = 43;
+
+//From 41 to 45
+const FemalePushups41to45 =
+[
+  { reps: 12, score: 40 }, { reps: 13, score: 41 },
+  { reps: 14, score: 42 }, { reps: 15, score: 43 },
+  { reps: 16, score: 44 }, { reps: 17, score: 45 },
+  { reps: 18, score: 46 }, { reps: 19, score: 47 },
+  { reps: 20, score: 48 }, { reps: 21, score: 49 },
+  { reps: 22, score: 50 }, { reps: 23, score: 51 },
+  { reps: 24, score: 52 }, { reps: 25, score: 53 },
+  { reps: 26, score: 54 }, { reps: 27, score: 56 },
+  { reps: 28, score: 57 }, { reps: 29, score: 58 },
+  { reps: 30, score: 59 }, { reps: 31, score: 60 },
+  { reps: 32, score: 61 }, { reps: 33, score: 62 },
+  { reps: 34, score: 63 }, { reps: 35, score: 64 },
+  { reps: 36, score: 65 }, { reps: 37, score: 66 },
+  { reps: 38, score: 67 }, { reps: 39, score: 68 },
+  { reps: 40, score: 69 }, { reps: 41, score: 70 }
+];
+const FemalePushups41to45MAX = 41;
+
+//From 46 to 50
+const FemalePushups46to50 =
+[
+  { reps: 11, score: 40 }, { reps: 12, score: 41 },
+  { reps: 13, score: 42 }, { reps: 14, score: 43 },
+  { reps: 15, score: 44 }, { reps: 16, score: 45 },
+  { reps: 17, score: 46 }, { reps: 18, score: 47 },
+  { reps: 19, score: 48 }, { reps: 20, score: 49 },
+  { reps: 21, score: 50 }, { reps: 22, score: 51 },
+  { reps: 23, score: 52 }, { reps: 24, score: 53 },
+  { reps: 25, score: 54 }, { reps: 26, score: 56 },
+  { reps: 27, score: 57 }, { reps: 28, score: 58 },
+  { reps: 29, score: 59 }, { reps: 30, score: 60 },
+  { reps: 31, score: 61 }, { reps: 32, score: 62 },
+  { reps: 33, score: 63 }, { reps: 34, score: 64 },
+  { reps: 35, score: 65 }, { reps: 36, score: 66 },
+  { reps: 37, score: 67 }, { reps: 38, score: 68 },
+  { reps: 39, score: 69 }, { reps: 40, score: 70 }
+];
+const FemalePushups46to50MAX = 40;
+
+//From 51 and Up
+const FemalePushups51 =
+[
+  { reps: 10, score: 40 }, { reps: 11, score: 41 },
+  { reps: 12, score: 42 }, { reps: 13, score: 43 },
+  { reps: 14, score: 44 }, { reps: 15, score: 45 },
+  { reps: 16, score: 46 }, { reps: 17, score: 48 },
+  { reps: 18, score: 49 }, { reps: 19, score: 50 },
+  { reps: 20, score: 51 }, { reps: 21, score: 52 },
+  { reps: 22, score: 53 }, { reps: 23, score: 54 },
+  { reps: 24, score: 55 }, { reps: 25, score: 56 },
+  { reps: 26, score: 57 }, { reps: 27, score: 58 },
+  { reps: 28, score: 59 }, { reps: 29, score: 60 },
+  { reps: 30, score: 61 }, { reps: 31, score: 63 },
+  { reps: 32, score: 64 }, { reps: 33, score: 65 },
+  { reps: 34, score: 66 }, { reps: 35, score: 67 },
+  { reps: 36, score: 68 }, { reps: 37, score: 69 },
+  { reps: 38, score: 70 }
+];
+const FemalePushups51MAX = 38;
 
 const PushupsPullups = ({ isMale, age, setPpScore }) => {
 
@@ -2333,7 +2501,54 @@ const PushupsPullups = ({ isMale, age, setPpScore }) => {
 
         //FEMALE DOING PUSH-UPS
         else {
-  
+          if(age >= 17 && age <= 20) {
+            const getScore = FemalePushups17to20.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups17to20MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 21 && age <= 25) {
+            const getScore = FemalePushups21to25.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups21to25MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 26 && age <= 30) {
+            const getScore = FemalePushups26to30.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups26to30MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 31 && age <= 35) {
+            const getScore = FemalePushups31to35.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups31to35MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 36 && age <= 40) {
+            const getScore = FemalePushups36to40.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups36to40MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 41 && age <= 45) {
+            const getScore = FemalePushups41to45.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups41to45MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 46 && age <= 50) {
+            const getScore = FemalePushups46to50.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups46to50MAX) setPpScore(70);
+            else setPpScore(0);
+          }
+          else if(age >= 51) {
+            const getScore = FemalePushups51.find((score) => score.reps == reps);
+            if(getScore) setPpScore(getScore.score);
+            else if(reps >= FemalePushups51MAX) setPpScore(70);
+            else setPpScore(0);
+          }
         }
       }
     }

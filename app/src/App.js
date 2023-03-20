@@ -166,7 +166,7 @@ function App() {
       {isPFT ? (
           <>
           <PushupsPullups isMale={isMale} age={age} setPpScore={setPpScore}/>
-          <Plank />
+          <Plank setPlankScore={setPlankScore}/>
           <RunningRowing />
         </>
       ) : (
