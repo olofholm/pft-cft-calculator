@@ -5,6 +5,7 @@ import ega from './ega.png';
 
 import PushupsPullups from "./components/pushups-pullups";
 import Plank from "./components/plank";
+import RunningRowing from "./components/running-rowing";
 
 //Header of app
 const Header = () => {
@@ -71,25 +72,6 @@ const MFAge = ({setIsMale, setAge}) => {
       <button className={maleButton} onClick={selectMale}>MALE</button>
       <button className={femaleButton} onClick={selectFemale}>FEMALE</button>
       <input className="age-input" type='number' name='age' placeholder='Age' onChange={changeAge}/>
-    </div>
-  );
-}
-
-//  *** PFT EVENTS ***
-
-const RunningRowing = () => {
-  return (
-    <div className="event-container">
-      <h2>Running/Rowing</h2>
-      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}}>
-        <select>
-          <option value='3milerun'>3 Mile Run</option>
-          <option value='3milerunAlt'>3 Mile Run (Altitude)</option>
-          <option value='5kRow'>5K Rowing</option>
-          <option value='5kRowAlt'>5K Rowing (Altitude)</option>
-        </select>
-        <TimerPicker format="mm:ss" disableClock={true} clearIcon={null} className='runrow-time'/>
-      </div>
     </div>
   );
 }
@@ -167,7 +149,7 @@ function App() {
           <>
           <PushupsPullups isMale={isMale} age={age} setPpScore={setPpScore}/>
           <Plank setPlankScore={setPlankScore}/>
-          <RunningRowing />
+          <RunningRowing isMale={isMale} age={age} setRrScore={setRrScore}/>
         </>
       ) : (
         <>
