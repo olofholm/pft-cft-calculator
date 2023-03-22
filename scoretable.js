@@ -17,7 +17,7 @@ for (let i = 0; i < 100; ++i) {
   else if(input == '9') break;
   else score++;
 
-  for(let j = 0; j < 10; j++) {
+  for(let j = 0; j < 5; j++) {
     const pack = { time: `00:${timeM}:${timeS}`, score: score };
     list.push(pack);
 
