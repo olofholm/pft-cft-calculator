@@ -2402,43 +2402,43 @@ const PushupsPullups = ({ isMale, age, setPpScore }) => {
             else if(reps >= FemalePullups17to20MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 21 && age <= 25) {
+          else if(age >= 21 && age <= 25) {
             const getScore = FemalePullups21to25.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups21to25MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 26 && age <= 30) {
+          else if(age >= 26 && age <= 30) {
             const getScore = FemalePullups26to30.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups26to30MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 31 && age <= 35) {
+          else if(age >= 31 && age <= 35) {
             const getScore = FemalePullups31to35.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups31to35MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 36 && age <= 40) {
+          else if(age >= 36 && age <= 40) {
             const getScore = FemalePullups36to40.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups36to40MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 41 && age <= 45) {
+          else if(age >= 41 && age <= 45) {
             const getScore = FemalePullups41to45.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups41to45MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 46 && age <= 50) {
+          else if(age >= 46 && age <= 50) {
             const getScore = FemalePullups46to50.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups46to50MAX) setPpScore(100);
             else setPpScore(0);
           }
-          if(age >= 51) {
+          else if(age >= 51) {
             const getScore = FemalePullups51.find((score) => score.reps == reps);
             if(getScore) setPpScore(getScore.score);
             else if(reps >= FemalePullups51MAX) setPpScore(100);

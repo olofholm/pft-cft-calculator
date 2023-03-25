@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import '../App.css';
 
-const AmmoCanLifts = ({ isMale, age, setAclScore }) => {
-
-  //MALE LIFTS
+//MALE LIFTS
   //17 to 20
   const male17to20 = [  { rep: 62, score: 40 }, { rep: 63, score: 41 }, { rep: 64, score: 43 }, { rep: 65, score: 44 }, { rep: 66, score: 45 }, { rep: 67, score: 47 }, { rep: 68, score: 48 }, { rep: 69, score: 50 }, { rep: 70, score: 51 }, { rep: 71, score: 52 }, { rep: 72, score: 54 }, { rep: 73, score: 55 }, { rep: 74, score: 56 }, { rep: 75, score: 58 }, { rep: 76, score: 59 }, { rep: 77, score: 60 }, { rep: 78, score: 62 }, { rep: 79, score: 63 }, { rep: 80, score: 65 }, { rep: 81, score: 66 }, { rep: 82, score: 67 }, { rep: 83, score: 69 }, { rep: 84, score: 70 }, { rep: 85, score: 71 }, { rep: 86, score: 73 }, { rep: 87, score: 74 }, { rep: 88, score: 75 }, { rep: 89, score: 77 }, { rep: 90, score: 78 }, { rep: 91, score: 80 }, { rep: 92, score: 81 }, { rep: 93, score: 82 }, { rep: 94, score: 84 }, { rep: 95, score: 85 }, { rep: 96, score: 86 }, { rep: 97, score: 88 }, { rep: 98, score: 89 }, { rep: 99, score: 90 }, { rep: 100, score: 92 }, { rep: 101, score: 93 }, { rep: 102, score: 95 }, { rep: 103, score: 96 }, { rep: 104, score: 97 }, { rep: 105, score: 99 }, { rep: 106, score: 100 } ];
   const male17to20MAX = 106;
@@ -69,8 +67,115 @@ const AmmoCanLifts = ({ isMale, age, setAclScore }) => {
   const female51 = [  { rep: 6, score: 40 }, { rep: 7, score: 42 }, { rep: 8, score: 43 }, { rep: 9, score: 45 }, { rep: 10, score: 46 }, { rep: 11, score: 48 }, { rep: 12, score: 49 }, { rep: 13, score: 51 }, { rep: 14, score: 53 }, { rep: 15, score: 54 }, { rep: 16, score: 56 }, { rep: 17, score: 57 }, { rep: 18, score: 59 }, { rep: 19, score: 61 }, { rep: 20, score: 62 }, { rep: 21, score: 64 }, { rep: 22, score: 65 }, { rep: 23, score: 67 }, { rep: 24, score: 68 }, { rep: 25, score: 70 }, { rep: 26, score: 72 }, { rep: 27, score: 73 }, { rep: 28, score: 75 }, { rep: 29, score: 76 }, { rep: 30, score: 78 }, { rep: 31, score: 79 }, { rep: 32, score: 81 }, { rep: 33, score: 83 }, { rep: 34, score: 84 }, { rep: 35, score: 86 }, { rep: 36, score: 87 }, { rep: 37, score: 89 }, { rep: 38, score: 91 }, { rep: 39, score: 92 }, { rep: 40, score: 94 }, { rep: 41, score: 95 }, { rep: 42, score: 97 }, { rep: 43, score: 98 }, { rep: 44, score: 100 } ];
   const female51MAX = 44;
 
+const AmmoCanLifts = ({ isMale, age, setAclScore }) => {
+
   const calculateScore = (e) => {
-    const reps = e.target.value;
+    
+    const rep = e.target.value;
+
+    //MALE
+    if(isMale){
+      if(age >= 17 && age <= 20) {
+        const getScore = male17to20.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male17to20MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 21 && age <= 25) {
+        const getScore = male21to25.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male21to25MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 26 && age <= 30) {
+        const getScore = male26to30.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male26to30MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 31 && age <= 35) {
+        const getScore = male31to35.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male31to35MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 36 && age <= 40) {
+        const getScore = male36to40.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male36to40MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 41 && age <= 45) {
+        const getScore = male41to45.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male41to45MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 46 && age <= 50) {
+        const getScore = male46to50.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male46to50MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 51) {
+        const getScore = male51.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= male51MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+    }
+    //FEMALE
+    else {
+      if(age >= 17 && age <= 20) {
+        const getScore = female17to20.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female17to20MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 21 && age <= 25) {
+        const getScore = female21to25.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female21to25MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 26 && age <= 30) {
+        const getScore = female26to30.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female26to30MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 31 && age <= 35) {
+        const getScore = female31to35.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female31to35MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 36 && age <= 40) {
+        const getScore = female36to40.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female36to40MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 41 && age <= 45) {
+        const getScore = female41to45.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female41to45MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 46 && age <= 50) {
+        const getScore = female46to50.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female46to50MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+      else if(age >= 51) {
+        const getScore = female51.find((score) => score.rep == rep);
+        if(getScore) setAclScore(getScore.score);
+        else if(rep >= female51MAX) setAclScore(100);
+        else setAclScore(0);
+      }
+    }
+
   }
 
   return (
