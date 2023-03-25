@@ -6,6 +6,9 @@ import ega from './ega.png';
 import PushupsPullups from "./components/pushups-pullups";
 import Plank from "./components/plank";
 import RunningRowing from "./components/running-rowing";
+import MovementToContact from "./components/movementToContact";
+import AmmoCanLifts from "./components/ammoCanLifts";
+import ManeuverUnderFire from "./components/maneuverUnderFire";
 
 //Header of app
 const Header = () => {
@@ -77,53 +80,26 @@ const MFAge = ({setIsMale, setAge}) => {
 }
 
 //  *** CFT EVENTS ***
-const MovementToContact = () => {
-  return (
-    <div className="event-container">
-      <h2>Movement to Contact</h2>
-      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '10px'}}>
-        <div style={{display: 'flex', alignContent: "center", justifyContent: "center"}}>
-          <label htmlFor='altitudeMTC'>Altitude over 4500 feet: </label>
-          <input type='checkbox' id='altitudeMTC' style={{height: '18px', width: '18px'}}/>
-        </div>
-        <TimerPicker format="mm:ss" disableClock={true} clearIcon={null} className='runrow-time'/>
-      </div>
-    </div>
-  );
-}
-
-const AmmoCanLifts = () => {
-  return (
-    <div className="event-container">
-      <h2>Ammo Can Lifts</h2>
-      <input type='number' placeholder='Reps' className="reps" style={{alignSelf: 'center'}}/>
-    </div>
-  );
-}
-
-const ManeuverUnderFire = () => {
-  return (
-    <div className="event-container">
-      <h2>Maneuver Under Fire</h2>
-      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '10px'}}>
-        <div style={{display: 'flex', alignContent: "center", justifyContent: "center"}}>
-          <label htmlFor='altitudeMUF'>Altitude over 4500 feet: </label>
-          <input type='checkbox' id='altitudeMUF' style={{height: '18px', width: '18px'}}/>
-        </div>
-        <TimerPicker format="mm:ss" disableClock={true} clearIcon={null} className='runrow-time'/>
-      </div>
-    </div>
-  );
-}
 
 // *** SCOREBOARD ***
-const Scoreboard = (props) => {
+const ScoreboardPFT = (props) => {
   return (
     <div className="event-container">
       <h2>Results</h2>
       <h3>Push-Ups/Pull-Ups: {props.ppScore}</h3>
       <h3>Plank: {props.plankScore}</h3>
       <h3>Run/Row: {props.rrScore}</h3>
+    </div>
+  );
+}
+
+const ScoreboardCFT = (props) => {
+  return (
+    <div className="event-container">
+      <h2>Results</h2>
+      <h3>Movement To Contact: {props.mtcScore}</h3>
+      <h3>Ammo Can Lift: {props.aclScore}</h3>
+      <h3>Movement Under Fire: {props.mufScore}</h3>
     </div>
   );
 }
@@ -135,9 +111,15 @@ function App() {
   const [isMale, setIsMale] = useState(true);
   const [age, setAge] = useState(17);
 
+  //PFT
   const [ppScore, setPpScore] = useState(0);
   const [plankScore, setPlankScore] = useState(0);
   const [rrScore, setRrScore] = useState(0);
+
+  //CFT
+  const [mtcScore, setMtcScore] = useState(0);
+  const [aclScore, setAclScore] = useState(0);
+  const [mufScore, setMufScore] = useState(0);
   
   return (
     <>
@@ -150,16 +132,16 @@ function App() {
           <PushupsPullups isMale={isMale} age={age} setPpScore={setPpScore}/>
           <Plank setPlankScore={setPlankScore}/>
           <RunningRowing isMale={isMale} age={age} setRrScore={setRrScore}/>
+          <ScoreboardPFT ppScore={ppScore} plankScore={plankScore} rrScore={rrScore}/>
         </>
       ) : (
         <>
-          <MovementToContact />
-          <AmmoCanLifts />
-          <ManeuverUnderFire />
+          <MovementToContact isMale={isMale} age={age} setMtcScore={setMtcScore}/>
+          <AmmoCanLifts isMale={isMale} age={age} setAclScore={setAclScore}/>
+          <ManeuverUnderFire isMale={isMale} age={age} setMufScore={setMufScore}/>
+          <ScoreboardCFT mtcScore={mtcScore} aclScore={aclScore} mufScore={mufScore}/>
         </>
       )}
-
-      <Scoreboard ppScore={ppScore} plankScore={plankScore} rrScore={rrScore}/>
     </>
   );
 } 
