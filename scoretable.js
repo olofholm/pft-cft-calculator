@@ -12,6 +12,7 @@ for (let i = 0; i < 1000; ++i) {
   const input = readline.question();
   
   if(input == '2') score+=2;
+  else if(input == '3') score+=3;
   else if(input == '1') score = score;
   else if(input == '9') break;
   else score++;
