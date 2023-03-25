@@ -2,9 +2,8 @@ const readline = require("readline-sync");
 const fs = require('fs');
   
 
-console.log('Starting time:')
-let timeM = readline.question();
-let timeS = readline.question();
+console.log('Starting Rep:')
+let startRep = readline.question();
 let list = [];
 let score = 39;
 
@@ -17,20 +16,10 @@ for (let i = 0; i < 1000; ++i) {
   else if(input == '9') break;
   else score++;
 
-  const pack = { time: `00:${timeM}:${timeS}`, score: score };
+  const rep = Number(startRep) + i;
+  const pack = { rep: rep, score: score };
   list.push(pack);
 
-  if(timeS == '00') {
-    const updateMins = Number(timeM) - 1;
-    if(updateMins < 10) timeM = `0${updateMins}`;
-    else timeM = updateMins.toString();
-    timeS = '59';
-  }
-  else {
-    const updateSecs = Number(timeS) -1;
-    if(updateSecs < 10) timeS = `0${updateSecs}`;
-    else timeS = updateSecs.toString();
-  }
   console.log(score);
   if(score == 100) break;
 }
@@ -38,7 +27,7 @@ for (let i = 0; i < 1000; ++i) {
 let listString = '[ ';
 
 list.forEach((item) => {
-  listString = `${listString} { time: '${item.time}', score: ${item.score} },`
+  listString = `${listString} { rep: ${item.rep}, score: ${item.score} },`
 });
 
 listString = `${listString} ];`;
