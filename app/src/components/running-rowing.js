@@ -420,56 +420,136 @@ const RunningRowing = ({isMale, age, setRrScore}) => {
       //5K ROW NON-ALTITUDE
       else if(exercise == '5kRow') {
         if(age <= 20) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow17to20MAX)) setRrScore(100);
+          else {
+            const score = maleRow17to20.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 21 && age <= 25) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow21to25MAX)) setRrScore(100);
+          else {
+            const score = maleRow21to25.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 26 && age <= 30) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow26to30MAX)) setRrScore(100);
+          else {
+            const score = maleRow26to30.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 31 && age <= 35) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow31to35MAX)) setRrScore(100);
+          else {
+            const score = maleRow31to35.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 36 && age <= 40) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow36to40MAX)) setRrScore(100);
+          else {
+            const score = maleRow36to40.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 41 && age <= 45) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow41to45MAX)) setRrScore(100);
+          else {
+            const score = maleRow41to45.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 46 && age <= 50) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow46to50MAX)) setRrScore(100);
+          else {
+            const score = maleRow46to50.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age > 51) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow51MAX)) setRrScore(100);
+          else {
+            const score = maleRow51.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
       }
 
       //5K ROW AT ALTITUDE
       else if(exercise == '5kRowAlt') {
         if(age <= 20) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow17to20AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow17to20Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 21 && age <= 25) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow21to25AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow21to25Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 26 && age <= 30) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow26to30AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow26to30Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 31 && age <= 35) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow31to35AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow31to35Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 36 && age <= 40) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow36to40AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow36to40Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 41 && age <= 45) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow41to45AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow41to45Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 46 && age <= 50) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow46to50AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow46to50Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age > 51) {
-          
+          if(timeToNumber(e) < timeToNumber(maleRow51AltMAX)) setRrScore(100);
+          else {
+            const score = maleRow51Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
       }
     }
@@ -614,56 +694,136 @@ const RunningRowing = ({isMale, age, setRrScore}) => {
       //5K ROW NON-ALTITUDE
       else if(exercise == '5kRow') {
         if(age <= 20) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow17to20MAX)) setRrScore(100);
+          else {
+            const score = femaleRow17to20.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 21 && age <= 25) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow21to25MAX)) setRrScore(100);
+          else {
+            const score = femaleRow21to25.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 26 && age <= 30) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow26to30MAX)) setRrScore(100);
+          else {
+            const score = femaleRow26to30.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 31 && age <= 35) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow31to35MAX)) setRrScore(100);
+          else {
+            const score = femaleRow31to35.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 36 && age <= 40) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow36to40MAX)) setRrScore(100);
+          else {
+            const score = femaleRow36to40.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 41 && age <= 45) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow41to45MAX)) setRrScore(100);
+          else {
+            const score = femaleRow41to45.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 46 && age <= 50) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow46to50MAX)) setRrScore(100);
+          else {
+            const score = femaleRow46to50.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age > 51) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow51MAX)) setRrScore(100);
+          else {
+            const score = femaleRow51.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
       }
 
       //5K ROW AT ALTITUDE
       else if(exercise == '5kRowAlt') {
         if(age <= 20) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow17to20AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow17to20Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 21 && age <= 25) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow21to25AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow21to25Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 26 && age <= 30) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow26to30AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow26to30Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 31 && age <= 35) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow31to35AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow31to35Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 36 && age <= 40) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow36to40AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow36to40Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 41 && age <= 45) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow41to45AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow41to45Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age >= 46 && age <= 50) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow46to50AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow46to50Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
         else if(age > 51) {
-          
+          if(timeToNumber(e) < timeToNumber(femaleRow51AltMAX)) setRrScore(100);
+          else {
+            const score = femaleRow51Alt.find((s) => s.time == e);
+            if(score) setRrScore(score.score);
+            else setRrScore(0);
+          }
         }
       }
     }
