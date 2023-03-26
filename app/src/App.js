@@ -133,7 +133,13 @@ const ScoreboardCFT = (props) => {
 const Link = () => {
   return (
     <div className="event-container">
-      <a href="https://www.fitness.marines.mil/pft-cft_standards17/">Learn more about PFT/CFT standards!</a>
+      <a 
+        href="https://www.fitness.marines.mil/pft-cft_standards17/"
+        style={{color: 'red'}}
+        target='_blank'
+        rel="noreferrer noopener"
+        >Learn more about PFT/CFT standards!
+      </a>
     </div>
   );
 }
