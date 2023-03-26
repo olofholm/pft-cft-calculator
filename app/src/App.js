@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import TimerPicker from 'react-time-picker';
 import ega from './ega.png';
 
 import PushupsPullups from "./components/pushups-pullups";
@@ -83,23 +82,51 @@ const MFAge = ({setIsMale, setAge}) => {
 
 // *** SCOREBOARD ***
 const ScoreboardPFT = (props) => {
+
+  const totalScore = props.rrScore + props.plankScore + props.ppScore;
+
   return (
     <div className="event-container">
       <h2>Results</h2>
       <h3>Push-Ups/Pull-Ups: {props.ppScore}</h3>
       <h3>Plank: {props.plankScore}</h3>
       <h3>Run/Row: {props.rrScore}</h3>
+      <h3>Total Score: {totalScore}</h3>
+      {
+        props.ppScore === 0 || props.plankScore === 0 || props.rrScore === 0 ? (<h2 style={{color: "red"}}>Unqualified...</h2>)
+        : totalScore >= 235 ? 
+          (<h2 style={{color: "red"}}>1st Class!</h2>)
+          : totalScore >= 200 ?
+            (<h2 style={{color: "red"}}>2nd Class!</h2>)
+            : totalScore >= 150 ?
+              (<h2 style={{color: "red"}}>3rd Class!</h2>)
+              : (<h2 style={{color: "red"}}>Unqualified...</h2>)
+      }
     </div>
   );
 }
 
 const ScoreboardCFT = (props) => {
+
+  const totalScore = props.mtcScore + props.aclScore + props.mufScore;
+
   return (
     <div className="event-container">
-      <h2>Results</h2>
+      <h2>Results:</h2>
       <h3>Movement To Contact: {props.mtcScore}</h3>
       <h3>Ammo Can Lift: {props.aclScore}</h3>
-      <h3>Movement Under Fire: {props.mufScore}</h3>
+      <h3>Maneuver Under Fire: {props.mufScore}</h3>
+      <h3>Total Score: {totalScore}</h3>
+      {
+        props.mtcScore === 0 || props.aclScore === 0 || props.mufScore === 0 ? (<h2 style={{color: "red"}}>Unqualified...</h2>)
+        : totalScore >= 235 ? 
+          (<h2 style={{color: "red"}}>1st Class!</h2>)
+          : totalScore >= 200 ?
+            (<h2 style={{color: "red"}}>2nd Class!</h2>)
+            : totalScore >= 150 ?
+              (<h2 style={{color: "red"}}>3rd Class!</h2>)
+              : (<h2 style={{color: "red"}}>Unqualified...</h2>)
+      }
     </div>
   );
 }
