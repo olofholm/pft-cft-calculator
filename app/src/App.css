@@ -34,12 +34,17 @@ label {
     align-self: center;
 }
 
+button {
+    transition: all 0.3s ease;
+}
+
 .header-container {
     display: flex;
     background-color: darkblue;
     width: 350px;
     margin: auto;
     margin-top: 25px;
+    margin-bottom: 5px;
     border-radius: 10px;
     padding: 10px;
     justify-content: space-between;
@@ -52,6 +57,7 @@ label {
     width: 370px;
     margin: auto;
     margin-top: 2px;
+    margin-bottom: 5px;
 }
 
 .pftcft-button {
@@ -63,6 +69,7 @@ label {
     font-weight: 600;
     background-color: darkred;
     border: solid 2px goldenrod;
+    transform: scale(0.95);
 }
 
 .pftcft-button-selected {
@@ -72,12 +79,14 @@ label {
     color: goldenrod;
     font-size: large;
     font-weight: 600;
-    background-color: rgb(78, 0, 0);
+    background-color: rgb(180, 0, 0);
     border: solid 2px goldenrod;
+    transform: scale(1.02);
 }
 
 .pftcft-button:hover {
-    background-color: rgb(120, 0, 0);
+    background-color: rgb(180, 0, 0);
+    transform: scale(1.02);
 }
 
 .male-female-button {
@@ -89,6 +98,7 @@ label {
     font-weight: 600;
     background-color: darkred;
     border: solid 2px goldenrod;
+    transform: scale(0.95);
 }
 
 .male-female-button-selected {
@@ -98,19 +108,21 @@ label {
     color: goldenrod;
     font-size: large;
     font-weight: 600;
-    background-color: rgb(78, 0, 0);
+    background-color: rgb(180, 0, 0);
     border: solid 2px goldenrod;
+    transform: scale(1.02);
 }
 
 .male-female-button:hover {
-    background-color: rgb(120, 0, 0);
+    background-color: rgb(180, 0, 0);
+    transform: scale(1.02);
 }
 
 .age-input {
     border-radius: 10px;
     width: 110px;
     font-size: large;
-    border: solid 2px goldenrod;
+    border: solid 2px black;
 }
 
 .event-container {
@@ -119,7 +131,7 @@ label {
     gap: 10px;
     width: 360px;
     margin: auto;
-    margin-top: 10px;
+    margin-bottom: 8px;
     border-radius: 10px;
     text-align: center;
     background-color: darkblue;

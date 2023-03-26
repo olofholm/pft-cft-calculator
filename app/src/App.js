@@ -73,12 +73,10 @@ const MFAge = ({setIsMale, setAge}) => {
     <div className="mfage">
       <button className={maleButton} onClick={selectMale}>MALE</button>
       <button className={femaleButton} onClick={selectFemale}>FEMALE</button>
-      <input className="age-input" type='number' name='age' placeholder='Age' onChange={changeAge}/>
+      <input className="age-input" type='number' name='age' placeholder=' Age' onChange={changeAge}/>
     </div>
   );
 }
-
-//  *** CFT EVENTS ***
 
 // *** SCOREBOARD ***
 const ScoreboardPFT = (props) => {
@@ -131,6 +129,15 @@ const ScoreboardCFT = (props) => {
   );
 }
 
+//Bottom of page link to USMC HQ PFT/CFT page
+const Link = () => {
+  return (
+    <div className="event-container">
+      <a href="https://www.fitness.marines.mil/pft-cft_standards17/">Learn more about PFT/CFT standards!</a>
+    </div>
+  );
+}
+
 
 function App() {
 
@@ -169,6 +176,7 @@ function App() {
           <ScoreboardCFT mtcScore={mtcScore} aclScore={aclScore} mufScore={mufScore}/>
         </>
       )}
+      <Link />
     </>
   );
 } 
