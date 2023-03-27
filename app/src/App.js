@@ -13,9 +13,9 @@ import ManeuverUnderFire from "./components/maneuverUnderFire";
 const Header = () => {
   return (
     <div className="header-container">
-      <img src={ega} alt='EGA' height={50}/>
+      <img src={ega} alt='USMC Eagle Glode and Anchor' style={{height: '50px', width: '50px'}}/>
       <h1>USMC PFT/CFT Calculator</h1>
-      <img src={ega} alt='EGA' height={50}/>
+      <img src={ega} alt='USMC Eagle Glode and Anchor' style={{height: '50px', width: '50px'}}/>
     </div>
   );
 }
