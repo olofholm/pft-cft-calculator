@@ -86,18 +86,24 @@ const ScoreboardPFT = (props) => {
   return (
     <div className="event-container">
       <h2>Results</h2>
-      <h3>Push-Ups/Pull-Ups: {props.ppScore}</h3>
-      <h3>Plank: {props.plankScore}</h3>
-      <h3>Run/Row: {props.rrScore}</h3>
+      <div style={{display: 'flex', justifyContent: 'space-between', padding: '0px 50px 0px 30px'}}>
+        <h3>Push-Ups/Pull-Ups:</h3><h3>{props.ppScore}</h3>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'space-between', padding: '0px 50px 0px 30px'}}>
+        <h3>Plank:</h3><h3>{props.plankScore}</h3>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'space-between', padding: '0px 50px 0px 30px'}}>
+        <h3>Run/Row:</h3><h3>{props.rrScore}</h3>
+      </div>
       <h3>Total Score: {totalScore}</h3>
       {
         props.ppScore === 0 || props.plankScore === 0 || props.rrScore === 0 ? (<h2 style={{color: "red"}}>Unqualified...</h2>)
         : totalScore >= 235 ? 
-          (<h2 style={{color: "red"}}>1st Class!</h2>)
+          (<h2 style={{color: "rgb(0, 240, 0)"}}>1st Class!</h2>)
           : totalScore >= 200 ?
-            (<h2 style={{color: "red"}}>2nd Class!</h2>)
+            (<h2 style={{color: "yellow"}}>2nd Class!</h2>)
             : totalScore >= 150 ?
-              (<h2 style={{color: "red"}}>3rd Class!</h2>)
+              (<h2 style={{color: "orange"}}>3rd Class!</h2>)
               : (<h2 style={{color: "red"}}>Unqualified...</h2>)
       }
     </div>
@@ -111,18 +117,24 @@ const ScoreboardCFT = (props) => {
   return (
     <div className="event-container">
       <h2>Results:</h2>
-      <h3>Movement To Contact: {props.mtcScore}</h3>
-      <h3>Ammo Can Lift: {props.aclScore}</h3>
-      <h3>Maneuver Under Fire: {props.mufScore}</h3>
+      <div style={{display: 'flex', justifyContent: 'space-between', padding: '0px 50px 0px 30px'}}>
+        <h3>Movement To Contact:</h3><h3>{props.mtcScore}</h3>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'space-between', padding: '0px 50px 0px 30px'}}>
+        <h3>Ammo Can Lift:</h3><h3>{props.aclScore}</h3>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'space-between', padding: '0px 50px 0px 30px'}}>
+        <h3>Maneuver Under Fire:</h3><h3>{props.mufScore}</h3>
+      </div>
       <h3>Total Score: {totalScore}</h3>
       {
         props.mtcScore === 0 || props.aclScore === 0 || props.mufScore === 0 ? (<h2 style={{color: "red"}}>Unqualified...</h2>)
         : totalScore >= 235 ? 
-          (<h2 style={{color: "red"}}>1st Class!</h2>)
+          (<h2 style={{color: "rgb(0, 240, 0)"}}>1st Class!</h2>)
           : totalScore >= 200 ?
-            (<h2 style={{color: "red"}}>2nd Class!</h2>)
+            (<h2 style={{color: "yellow"}}>2nd Class!</h2>)
             : totalScore >= 150 ?
-              (<h2 style={{color: "red"}}>3rd Class!</h2>)
+              (<h2 style={{color: "orange"}}>3rd Class!</h2>)
               : (<h2 style={{color: "red"}}>Unqualified...</h2>)
       }
     </div>
