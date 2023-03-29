@@ -9,7 +9,7 @@ import MovementToContact from "./components/movementToContact";
 import AmmoCanLifts from "./components/ammoCanLifts";
 import ManeuverUnderFire from "./components/maneuverUnderFire";
 
-//Header of app
+//Header of ap
 const Header = () => {
   return (
     <div className="header-container">
