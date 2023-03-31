@@ -148,7 +148,7 @@ const ScoreboardCFT = (props) => {
 const Link = () => {
   return (
     <div className="event-container">
-      <h2>Easy Ways To Improve:</h2>
+      <h2>Easy Ways To Improve Your PFT:</h2>
       <h3>Pull-Ups</h3>
       <ol>
         <li>Strengthen your grip: A strong grip is crucial for executing pull-ups. Utilize exercises like deadlifts, farmer's walks, and hanging from a bar to improve your grip strength.</li>
@@ -162,6 +162,39 @@ const Link = () => {
         <li>Train regularly: Consistent training is essential for improvement. Incorporate pull-ups into your routine at least twice a week.</li>
         <br></br>
         <li>Increase reps gradually: Start with a manageable number of reps and gradually increase as you improve. Aim for 3 sets of 5 reps, then move to 3 sets of 8 reps, and so on.</li>
+      </ol>
+      <h3>Push-Ups</h3>
+      <ol>
+        <li>Practice regularly: Consistency is key when it comes to improving your push-ups. Aim to practice push-ups at least 2-3 times a week.</li>
+        <br/>
+        <li>Try different variations: Mix up your routine by trying different types of push-ups such as wide push-ups, diamond push-ups, or incline push-ups.</li>
+        <br/>
+        <li>Focus on your breathing: Exhale as you push yourself up and inhale as you lower yourself down.</li>
+        <br/>
+        <li>Strengthen your core: A strong core will help you maintain proper form throughout the exercise. Incorporate exercises such as planks or crunches into your routine.</li>
+        <br/>
+      </ol>
+      <h3>Plank</h3>
+      <ol>
+        <li>Engage your core: Focus on contracting your abdominal muscles and keeping your body in a straight line throughout the exercise.</li>
+        <br/>
+        <li>Mix up your routine: Try different variations of the plank, such as side plank or plank with leg lifts, to challenge different muscles.</li>
+        <br/>
+        <li>Breathe: Inhale deeply through your nose and exhale slowly through your mouth. Make sure to keep your breathing steady throughout the exercise.</li>
+        <br/>
+        <li>Increase the difficulty: Once you've mastered the standard plank, you can make it more challenging by lifting one arm or leg off the ground, or by placing your feet on a stability ball.</li>
+        <br/>
+      </ol>
+      <h3>3 Mile Run</h3>
+      <ol>
+        <li>Gradually increase distance: If you're new to running or haven't run in a while, start with shorter distances and gradually increase the distance over time. Aim to increase your distance by about 10% each week.</li>
+        <br/>
+        <li>Incorporate interval training: Mix up your routine by incorporating interval training. For example, alternate between running at a fast pace for 1 minute and then jogging at a slower pace for 2 minutes. This will help improve your cardiovascular fitness and speed.</li>
+        <br/>
+        <li>Focus on proper form: Make sure to run with good form. Keep your shoulders relaxed, your arms bent at a 90-degree angle, and your feet landing lightly on the ground.</li>
+        <br/>
+        <li>Stay hydrated: Make sure to drink plenty of water before, during, and after your run to stay hydrated.</li>
+        <br/>
       </ol>
       <a 
         href="https://www.fitness.marines.mil/pft-cft_standards17/"
