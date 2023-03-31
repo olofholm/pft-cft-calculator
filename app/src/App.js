@@ -198,7 +198,7 @@ const Link = () => {
       </ol>
       <a 
         href="https://www.fitness.marines.mil/pft-cft_standards17/"
-        style={{color: 'red'}}
+        style={{color: 'gold', fontSize: '20px'}}
         target='_blank'
         rel="noreferrer noopener"
         >Learn more about PFT/CFT standards!
