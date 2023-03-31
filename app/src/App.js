@@ -152,15 +152,15 @@ const Link = () => {
       <h3>Pull-Ups</h3>
       <ol>
         <li>Strengthen your grip: A strong grip is crucial for executing pull-ups. Utilize exercises like deadlifts, farmer's walks, and hanging from a bar to improve your grip strength.</li>
-        <br></br>
+        <br/>
         <li>Practice hanging: Hang from a pull-up bar for as long as possible. This will help develop the necessary grip strength, as well as strengthen the muscles required for pull-ups.</li>
-        <br></br>
+        <br/>
         <li>Use resistance bands: Resistance bands can be helpful in assisting you with completing pull-ups. Attach the band to the bar, place your foot in it, and it will help to lift you up.</li>
-        <br></br>
+        <br/>
         <li>Use proper form: Correct form is essential for effective pull-ups. Keep your shoulders down, engage your core, and pull your body up until your chin is over the bar.</li>
-        <br></br>
+        <br/>
         <li>Train regularly: Consistent training is essential for improvement. Incorporate pull-ups into your routine at least twice a week.</li>
-        <br></br>
+        <br/>
         <li>Increase reps gradually: Start with a manageable number of reps and gradually increase as you improve. Aim for 3 sets of 5 reps, then move to 3 sets of 8 reps, and so on.</li>
       </ol>
       <h3>Push-Ups</h3>
