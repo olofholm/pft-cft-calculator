@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css';
 import TimerPicker from 'react-time-picker';
+import questionCircle from '../question-circle.svg';
 
 
 //All Plank Score
@@ -182,7 +183,17 @@ const Plank = ({ setPlankScore }) => {
 
   return (
     <div className="event-container">
-      <h2>Plank</h2>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <h2 style={{marginLeft: '156px'}}>Plank</h2>
+        <a 
+          style={{marginLeft: 'auto'}}
+          href="https://www.fitness.marines.mil/Portals/211/Docs/PFT_CFT/PFT_CFT%20Standards/Plank%20Scoring%20Table.pdf?ver=qjyQlKiDx7i5hVOH6DCfkw%3d%3d"
+          target='_blank'
+           rel="noreferrer noopener"
+        >
+        <img src={questionCircle} alt='Question mark' style={{height: '24px', width: '24px'}}/>
+        </a>
+      </div>
       <TimerPicker onChange={calculateScore} maxDetail="second" format="mm:ss" disableClock={true} clearIcon={null} className='plank-time'/>
     </div>
   );

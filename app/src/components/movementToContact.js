@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TimerPicker from 'react-time-picker';
 import '../App.css';
+import questionCircle from '../question-circle.svg';
 
 //MALE RUNNING NON-ALTITUDE
 //17 to 20
@@ -429,7 +430,17 @@ const MovementToContact = ({ isMale, age, setMtcScore }) => {
 
   return (
     <div className="event-container">
-      <h2>Movement to Contact</h2>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <h2 style={{marginLeft: '86px'}}>Movement To Contact</h2>
+        <a 
+          style={{marginLeft: 'auto'}}
+          href="https://www.fitness.marines.mil/Portals/211/Docs/PFT_CFT/PFT_CFT%20Standards/Table%203-3%20MTC%20Scoring%20Tables.pdf?ver=2019-01-07-111305-403"
+          target='_blank'
+           rel="noreferrer noopener"
+        >
+        <img src={questionCircle} alt='Question mark' style={{height: '24px', width: '24px'}}/>
+        </a>
+      </div>
       <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '10px'}}>
         <div style={{display: 'flex', alignContent: "center", justifyContent: "center"}}>
           <label htmlFor='altitudeMTC'>Altitude over 4500 feet: </label>

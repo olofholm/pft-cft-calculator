@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../App.css';
+import questionCircle from '../question-circle.svg';
 
 //MALE LIFTS
   //17 to 20
@@ -180,7 +181,17 @@ const AmmoCanLifts = ({ isMale, age, setAclScore }) => {
 
   return (
     <div className="event-container">
-      <h2>Ammo Can Lifts</h2>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <h2 style={{marginLeft: '114px'}}>Ammo Can Lift</h2>
+        <a 
+          style={{marginLeft: 'auto'}}
+          href="https://www.fitness.marines.mil/Portals/211/Docs/PFT_CFT/PFT_CFT%20Standards/Table%203-4-AL%20Scoring%20Tables.pdf?ver=2019-01-04-154009-507"
+          target='_blank'
+           rel="noreferrer noopener"
+        >
+        <img src={questionCircle} alt='Question mark' style={{height: '24px', width: '24px'}}/>
+        </a>
+      </div>
       <input onChange={calculateScore} type='number' placeholder='Reps' className="reps" style={{alignSelf: 'center'}}/>
     </div>
   );

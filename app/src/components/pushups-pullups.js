@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../App.css';
+import questionCircle from '../question-circle.svg';
 
 //MALE PULL UPS SCORING TABLES
 //From 17 to 20
@@ -2555,7 +2556,17 @@ const PushupsPullups = ({ isMale, age, setPpScore }) => {
   
     return (
       <div className="event-container">
-        <h2>Pull-Ups/Push-Ups</h2>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <h2 style={{marginLeft: '100px'}}>Pull-Ups/Push-Ups</h2>
+          <a 
+            style={{marginLeft: 'auto'}}
+            href="https://www.fitness.marines.mil/Portals/211/Docs/PFT_CFT/PFT_CFT%20Standards/Table%202-2%20Hybrid%20Pull-up%20Push-up%20Test%20Scoring%20Tables.pdf?ver=2019-01-04-154009-413"
+            target='_blank'
+            rel="noreferrer noopener"
+          >
+            <img src={questionCircle} alt='Question mark' style={{height: '24px', width: '24px'}}/>
+          </a>
+        </div>
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}}>
           <select onChange={select}>
             <option value='pullups'>Pull-Ups</option>

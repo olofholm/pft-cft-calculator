@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TimerPicker from 'react-time-picker';
 import '../App.css';
+import questionCircle from '../question-circle.svg';
 
 //SCORE TABLES
 
@@ -837,7 +838,17 @@ const RunningRowing = ({isMale, age, setRrScore}) => {
 
   return (
     <div className="event-container">
-      <h2>Running/Rowing</h2>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <h2 style={{marginLeft: '110px'}}>Running/Rowing</h2>
+        <a 
+          style={{marginLeft: 'auto'}}
+          href="https://www.fitness.marines.mil/Portals/211/Docs/PFT_CFT/PFT_CFT%20Standards/Table%202-4%20PFT%203%20Mile%20Run%20Scoring%20Tables.pdf?ver=2019-01-07-111305-433"
+          target='_blank'
+           rel="noreferrer noopener"
+        >
+        <img src={questionCircle} alt='Question mark' style={{height: '24px', width: '24px'}}/>
+        </a>
+      </div>
       <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}}>
         <select onChange={onSelect}>
           <option value='3milerun'>3 Mile Run</option>
