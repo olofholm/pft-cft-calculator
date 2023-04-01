@@ -18,12 +18,14 @@ h1 {
     color: goldenrod;
     font-size: large;
     font-weight: 600;
+    text-shadow: 2px 2px 2px black;
 }
 
 h2 {
     color: goldenrod;
     font-size: 18px;
     font-weight: 600;
+    text-shadow: 2px 2px 2px black;
     margin: 0;
 }
 
@@ -31,6 +33,7 @@ h3 {
     color: goldenrod;
     font-size: 16px;
     font-weight: 600;
+    text-shadow: 2px 2px 2px black;
     margin: 2px;
 }
 
@@ -91,6 +94,7 @@ button {
     color: goldenrod;
     font-size: large;
     font-weight: 600;
+    text-shadow: 2px 2px 2px black;
     background-color: rgb(180, 0, 0);
     border: solid 2px goldenrod;
     transform: scale(1.02);
@@ -98,6 +102,7 @@ button {
 
 .pftcft-button:hover {
     background-color: rgb(180, 0, 0);
+    text-shadow: 2px 2px 2px black;
     transform: scale(1.02);
 }
 
@@ -120,6 +125,7 @@ button {
     color: goldenrod;
     font-size: large;
     font-weight: 600;
+    text-shadow: 2px 2px 2px black;
     background-color: rgb(180, 0, 0);
     border: solid 2px goldenrod;
     transform: scale(1.02);
@@ -127,6 +133,7 @@ button {
 
 .male-female-button:hover {
     background-color: rgb(180, 0, 0);
+    text-shadow: 2px 2px 2px black; 
     transform: scale(1.02);
 }
 
