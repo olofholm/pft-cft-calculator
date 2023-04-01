@@ -223,7 +223,7 @@ function App() {
   const [mtcScore, setMtcScore] = useState(0);
   const [aclScore, setAclScore] = useState(0);
   const [mufScore, setMufScore] = useState(0);
-  
+
   return (
     <>
       <Header />
